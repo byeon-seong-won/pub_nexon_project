@@ -1,0 +1,828 @@
+@import url(common.css);
+@import url(footer.css);
+@import url(header.css);
+@import url(sub.css);
+
+
+
+
+/* /////section */
+section {
+  margin-top: 30px;
+  width: 100%;
+}
+#wrap_index {
+  position: relative;
+}
+
+#main_con_main {
+  width: 1400px;
+  margin: auto;
+  position: relative;
+}
+
+.reco_game {
+  margin-top: 80px;
+  height: 550px;
+}
+
+
+/* top btn */
+.eventQuick {
+  position: fixed;
+  width: 100px;
+  right: 80px;
+  bottom: 60px;
+  z-index: 10000;
+}
+.eventQuick1 {
+  position: fixed;
+  width: 100px;
+  right: 60px;
+  bottom: 60px;
+  z-index: 10000;
+}
+
+.quick_in{
+	position: absolute;
+	width: 100px;
+	left: 100%; 
+  margin-left: 30px;
+	top:20px;
+  z-index: 10000;
+}
+.quick_menu {
+  display: flex;
+  flex-direction: column;
+}
+.quick_menu li {
+  width: inherit;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.quickNotice {
+  position: absolute;
+	width: 100px;
+	left: 100%; 
+  margin-left: 80px;
+	bottom:20px;
+  z-index: 10000;
+}
+.quick_menu li:nth-child(1) {
+  border-radius: 10px 10px 0 0 ;
+  border: 1px solid #fff;
+}
+.quick_menu li:nth-child(2) {
+  border-top: 1px solid #024592;
+  
+  border-radius: 0 0 10px 10px ;
+  border: 1px solid #fff;
+ 
+}
+.quick_menu li:nth-child(2) span {
+  color: #ddd;
+}
+.quick_menu li>span {
+  color: #fff;
+  margin-right: 10px;
+}
+.quick_menu li>.xi1 {
+  transform: translateY(4px);
+  text-align: center;
+}
+.quick_menu li>.xi1, 
+.quick_menu li>.xi2 {
+  font-size: 23px;
+  color: #eee;
+}
+.quick_menu li>.xi2 {
+  transform: translateY(5px);
+  color: #fff;
+}
+.quick_menu img {
+  width: 100px;
+  height: 40px;
+}
+.fix {
+  position: fixed;
+  position: absolute;
+  width: 100px;
+  top: 0;
+  z-index: 1000;
+}
+.quick_menu li:nth-child(2) {
+  position: relative;
+  cursor: pointer;
+}
+.topmove {
+  z-index: 1000;
+}
+.topmoveImg {
+  bottom: 100%;
+  position: absolute;
+  transform: translate(-201px,52px);
+}
+.topmoveImg img {
+  display: block;
+  width: 300px;
+  height: 190px;
+}
+.topmoveImg p {
+  display: block;
+  background-color: #ddd;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+.topmoveImg p:hover {
+  cursor: pointer;
+  color: #000;
+}
+.topmove .xi1:hover {
+  cursor: pointer;
+}
+.TOPMOVE {
+  display: none;
+}
+.hover {
+  display: block;
+}
+
+
+
+
+.title>h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+  display: inline-block;
+}
+.title>span {
+  color: #ddd;
+}
+.RECOgameImg, .NEWgameImg {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.RECOgameImg .RECOIMG {
+  width: 250px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+}
+.NEWgameImg .NEWIMG {
+  width: 250px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+}
+.new_game {
+  margin-top: 40px;
+}
+
+.imgDetail {
+  padding-left: 10px;
+}
+.imgDetail h3 {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+.imgDetail p {
+  color: #bbb;
+  font-size: 16px;
+}
+.imgDetail .fa {
+  margin-top: 14px;
+  font-size: 20px;
+  color: #bbb;
+  margin-right: 15px;
+}
+.imgDetail .fa:hover {
+  color: #0077ff;
+  cursor: pointer;
+}
+.hoverText {
+  position: absolute;
+  display: block;
+  margin-top: 30px;
+  width: 80px;
+  height: 35px;
+  background-color: rgb(33, 70, 109);
+  border-radius: 5px;
+  transform: translate(-40px,-14px);
+  opacity: 0;
+}
+.hoverText:before {
+  content: '\f0de';
+  position: absolute;
+  font-family: fontawesome;
+  color:  rgb(33, 70, 109);
+  bottom: 50%;
+  left: 50%;
+  font-size: 28px;
+}
+.hoverText1:after {
+  content: 'Window';
+  position: absolute;
+  font-family: fontawesome;
+  color:  #ccc;
+  bottom: 24%;
+  left: 16%;
+  font-size: 15px;
+}
+.hoverText2:after {
+  content: 'Apple';
+  position: absolute;
+  font-family: fontawesome;
+  color:  #ccc;
+  bottom: 30%;
+  left: 26%;
+  font-size: 15px;
+}
+.hoverText3:after {
+  content: 'Android';
+  position: absolute;
+  font-family: fontawesome;
+  color:  #ccc;
+  bottom: 28%;
+  left: 17%;
+  font-size: 15px;
+}
+.fa1first>.hoverText {
+  left: 45px;
+}
+.fa1first>.hoverText:before {
+  content: '\f0de';
+  position: absolute;
+  font-family: fontawesome;
+  color:  rgb(33, 70, 109);
+  bottom: 50%;
+  left: 8px;
+  font-size: 28px;
+}
+
+.RECOgameImg .img1 {
+  background: url(../image/main_fir_game5.png) no-repeat center center;
+  width: 250px;
+  height: 300px;
+  position: relative;
+  transition: 0.5s;
+}
+.RECOgameImg .img1:before {
+  content: '';
+  background:url(../image/sudden_logo.png)no-repeat center center;
+  bottom: 5px;
+  left: 0;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.RECOgameImg .img1:after {
+  content: '';
+  background:url(../image/suddenattack.gif) no-repeat center center;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.RECOgameImg .img1:hover:after {
+  opacity: 1;
+}
+.RECOgameImg .img1:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+.RECOgameImg .img2 {
+  background: url(../image/main_fir_game2.png) no-repeat center center;
+  width: 250px;
+  height: 300px;
+  position: relative;
+  transition: 0.5s;
+}
+.RECOgameImg .img2:before {
+  content: '';
+  background:url(../image/mabinogi_logo.png)no-repeat center center;
+  bottom: 5px;
+  left: 0;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.RECOgameImg .img2:after {
+  content: '';
+  background:url(../image/mabinogi.gif) no-repeat top center;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.RECOgameImg .img2:hover:after {
+  opacity: 1;
+}
+.RECOgameImg .img2:hover {
+  transform: scale(1.05);
+}
+
+
+.RECOgameImg .img3 {
+  background: url(../image/main_fir_game3.png) no-repeat center center;
+  width: 250px;
+  height: 300px;
+  position: relative;
+  transition: 0.5s;
+}
+.RECOgameImg .img3:before {
+  content: '';
+  background:url(../image/fifa4_logo.png)no-repeat center center;
+  bottom: 10px;
+  left: 0;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.RECOgameImg .img3:after {
+  content: '';
+  background:url(../image/fifa.gif) no-repeat center center;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.RECOgameImg .img3:hover:after {
+  opacity: 1;
+}
+.RECOgameImg .img3:hover {
+  transform: scale(1.05);
+}
+
+
+
+.RECOgameImg .img4 {
+  background: url(../image/main_fir_game7.png) no-repeat center center;
+  width: 250px;
+  height: 300px;
+  position: relative;
+  transition: 0.5s;
+}
+.RECOgameImg .img4:before {
+  content: '';
+  background:url(../image/maple_logo.png)no-repeat center center;
+  bottom: 10px;
+  left: 0;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.RECOgameImg .img4:after {
+  content: '';
+  background:url(../image/maple.gif) no-repeat center center;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.RECOgameImg .img4:hover:after {
+  opacity: 1;
+}
+.RECOgameImg .img4:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+.RECOgameImg .img5 {
+  background: url(../image/main_fir_game8.png) no-repeat center center;
+  width: 250px;
+  height: 300px;
+  position: relative;
+  transition: 0.5s;
+}
+.RECOgameImg .img5:before {
+  content: '';
+  background:url(../image/crazy_logo.png) no-repeat center center;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  opacity: 1;
+  z-index: 10;
+  cursor: pointer;
+}
+.RECOgameImg .img5:after {
+  content: '';
+  background:url(../image/crazy.gif) no-repeat center center;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.RECOgameImg .img5:hover:after {
+  opacity: 1;
+}
+.RECOgameImg .img5:hover {
+  transform: scale(1.05);
+}
+
+
+
+.RECOIMG:after,
+.NEWIMG:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  opacity: 0;
+  background: linear-gradient(25deg, rgb(10, 10, 53), transparent);
+  transition: 0.8s;
+}
+.RECOIMG:hover:after,
+.NEWIMG:hover:after {
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+
+.NEWgameImg .img1 {
+  background: url(../image/main_fir_game6.png) no-repeat center center;
+  position: relative;
+  width: 250px;
+  height: 300px;
+}
+.NEWgameImg .img1:before {
+  content: '';
+  background:url(../image/kart_logo.png)no-repeat center center;
+  bottom:0;
+  left: 0;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.NEWgameImg .img1:after {
+  content: '';
+  background:url(../image/kartrider.gif) no-repeat center center;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.NEWgameImg .img1:hover:after {
+  opacity: 1;
+}
+.NEWgameImg .img1:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+.NEWgameImg .img2 {
+  background: url(../image/main_sec_game1.png) no-repeat center center;
+  width: 250px;
+  height: 300px;
+}
+.NEWgameImg .img2:before {
+  content: '';
+  background:url(../image/descen_logo.png)no-repeat center center;
+  bottom:0;
+  left: 0;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.NEWgameImg .img2:after {
+  content: '';
+  background:url(../image/firstdesc.gif) no-repeat center center;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.NEWgameImg .img2:hover:after {
+  opacity: 1;
+}
+.NEWgameImg .img2:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+.NEWgameImg .img3 {
+  background: url(../image/character_img_1.png) no-repeat center center;
+  width: 250px;
+  height: 300px;
+}
+.NEWgameImg .img3:before {
+  content: '';
+  background:url(../image/grand_logo.png)no-repeat center center;
+  bottom:0;
+  left: 3px;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.NEWgameImg .img3:after {
+  content: '';
+  background:url(../image/grandchasegif.gif) no-repeat center center;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.NEWgameImg .img3:hover:after {
+  opacity: 1;
+}
+.NEWgameImg .img3:hover {
+  transform: scale(1.05);
+}
+
+
+
+.NEWgameImg .img4 {
+  background: url(../image/main_sec_game3.png) no-repeat center center;
+  width: 250px;
+  height: 300px;
+}
+.NEWgameImg .img4:before {
+  content: '';
+  background:url(../image/warhavenlogo.png)no-repeat center center;
+  bottom:0;
+  left: 0;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.NEWgameImg .img4:after {
+  content: '';
+  background:url(../image/warhavengif.gif) no-repeat center center;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.NEWgameImg .img4:hover:after {
+  opacity: 1;
+}
+.NEWgameImg .img4:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+.NEWgameImg .img5 {
+  background: url(../image/main_sec_game4.png) no-repeat center center;
+  width: 250px;
+  height: 300px;
+}
+.NEWgameImg .img5:before {
+  content: '';
+  background:url(../image/davelogo.png)no-repeat center center;
+  bottom:10px;
+  left: 0;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.NEWgameImg .img5:after {
+  content: '';
+  background:url(../image/davegif.gif) no-repeat center center;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.NEWgameImg .img5:hover:after {
+  opacity: 1;
+}
+.NEWgameImg .img5:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+.NEWIMG:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  opacity: 0;
+  background: linear-gradient(25deg, rgb(10, 10, 53), transparent);
+  transition: 0.8s;
+}
+.NEWIMG:hover:after {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.bottom_btn {
+  margin: 80px auto;
+  /* border: 1px solid #fff; */
+  width: 220px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 45px;
+  background-color: rgb(0, 119, 255);
+  box-shadow: rgb(0, 119, 255) 0px 3px 4px, rgb(0, 119, 255) 0px 3px 1px;
+  text-shadow: 0px 2px 2px #12263c;
+  cursor: pointer;
+}
+.bottom_btn a {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+}
+.bottom_btn:hover {
+  background-color: rgb(62, 143, 235);
+}
+
+.nexonPlug {
+  width: 1300px;
+  height: 550px;
+  margin: 50px auto 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 40px;
+  position: relative;
+  background-color: rgb(8, 15, 33);
+}
+
+
+.container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  display: flex;
+}
+.leftCon {
+  transform: translateX(-35px);
+  width: 550px;
+}
+.leftCon img {
+  transform: translateX(-20px);
+  width: 350px;
+}
+.leftCon h3 {
+  margin-left: 5px;
+  margin-top: 25px;
+  color: #fff;
+  font-size: 43px;
+  font-weight: 500;
+}
+.leftCon h4 {
+  margin-top: 40px;
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #eee;
+}
+.leftCon p {
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #eee;
+  font-size: 15px;
+}
+.bottomBtn {
+  margin-top: 60px;
+  height: 70PX;
+  display: flex;
+}
+.bottomBtn span {
+  text-shadow: 0px 2px 2px #12263c;
+  flex: 2;
+  border-radius: 15px;
+  padding: 5px 20px;
+  background-color: rgb(9, 81, 163);
+  display: inline-block;
+  color: #fff;
+  font-size: 22px;
+  width: 210PX; 
+  text-align: center;
+  line-height: 60px;
+}
+.bottomBtn span:first-child {
+  margin-right: 15px;
+}
+.bottomBtn span:hover {
+  cursor: pointer;
+  background-color: rgb(62, 143, 235);
+}
+
+.rightCon {
+  margin-left: 85px;
+  width: 500px;
+  height: 350px;
+}
+.nexonplug {
+  box-shadow: #eee 0px 10px 55px;
+}
+.rightCon img {
+  width: 500px;
+  height: 350px;
+}
+.nexonPlay {
+  width: 1300px;
+  height: 550px;
+  margin: 80px auto 80px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 20px;
+  position: relative;
+  background-color: rgb(5, 11, 27);
+}
+
+
+
+
