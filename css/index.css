@@ -4,6 +4,11 @@
 @import url(sub.css);
 
 
+#wrap_index, #wrap_Faq, #wrap_notice, #eventQuick1, #wrap_event,
+#wrap_login, #wrap_login, #wrap_account, #wrap_cash, #game_index,
+.eventQuick1, .eventQuick {display: block;}
+.mediaq { display: none;}
+
 
 
 /* /////section */
@@ -826,3 +831,53 @@ section {
 
 
 
+
+
+
+
+
+
+
+
+/* 해상도 1920만 지정 */
+@media (max-width : 1920px) {
+  #wrap_index, #wrap_Faq, #wrap_notice, #eventQuick1, #wrap_event,
+  #wrap_login, #wrap_login, #wrap_account, #wrap_cash, #game_index,
+  .eventQuick1, .eventQuick {display: none;}
+
+
+  .mediaq {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Noto sans KR', sans-serif;
+    letter-spacing: -0.5px;
+  }
+  .mediaq>div {width: 90%;margin: 0 auto;height: 100%;word-break:keep-all;position: relative;}
+  .mediaq>div>h1 {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+}
+
+
+@media (max-width : 768px) {
+  #wrap_index, #wrap_Faq, #wrap_notice, #eventQuick1, #wrap_event,
+  #wrap_login, #wrap_login, #wrap_account, #wrap_cash, #game_index,
+  .eventQuick1, .eventQuick {display: none;}
+
+  .mediaq {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Noto sans KR', sans-serif;
+    letter-spacing: -0.5px;
+  }
+  .mediaq>div {width: 90%;margin: 0 auto;height: 100%;word-break:keep-all;position: relative;}
+  .mediaq>div>h1 {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+}
