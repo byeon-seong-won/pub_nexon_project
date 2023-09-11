@@ -840,7 +840,7 @@ section {
 
 
 /* 해상도 1920만 지정 */
-@media (max-width : 1920px) {
+@media (max-width : 1900px) {
   #wrap_index, #wrap_Faq, #wrap_notice, #eventQuick1, #wrap_event,
   #wrap_login, #wrap_login, #wrap_account, #wrap_cash, #game_index,
   .eventQuick1, .eventQuick {display: none;}
